@@ -1,4 +1,4 @@
-*{
+* {
     font-family: 'Indie Flower', cursive;
 }
 
@@ -6,10 +6,6 @@
 body {
     background-color: bisque;
 }
-
-
-
-
 
 
 h1 {
@@ -29,13 +25,13 @@ h1 {
     cursor: pointer;
 }
 
-::placeholder{
+::placeholder {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     width: 80%;
 }
 
-text{
+text {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -71,14 +67,14 @@ button {
 
 
 
-#myStack{
+#myStack {
     display: flex;
     justify-content: space-around;
     width: 100%;
     padding-top: 130px;
 }
 
-.toDoList{
+.toDoList {
     background-color: rgb(235, 210, 154);
     border-radius: 60px;
     width: 30%;
@@ -91,40 +87,24 @@ button {
     margin-top: 100px;
 }
 
-h2{
+h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 35px;
 }
 
-.note{
+.note {
 
     font-size: 20px;
     font-family: 'Indie Flower', cursive;
 
 }
 
-#myStack button{
+#myStack button {
     background-color: rgb(233, 196, 111);
     padding: 15px 80px;
     border-radius: 30px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
