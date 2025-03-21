@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: bisque;
+
+}
+
+:root {}
+
+header {
+    height: 15%;
+    width: 100vw;
+}
+
+header nav {
+    display: flex;
+    justify-content: left;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+header nav img {
+    width: 3%;
+    margin-left: 30px;
+    margin-top: 10px;
+
+}
+
+.button {
+    text-decoration: none;
+    background-color: rgb(41, 113, 177);
+    margin-left: 30px;
+    margin-top: 10px;
+    border-radius: 50px;
+    padding: 5px 30px 5px 30px;
+}
+
+.morning {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    padding-right: 150px;
+}
