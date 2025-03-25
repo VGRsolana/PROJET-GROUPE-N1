@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sitting.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 450px)">
+
+    <title>Settings</title>
+</head>
+<header>
+    <nav>
+        <a href="#"><img src="../img/bx-cog.svg" alt=""></a>
+        <div>
+            <h1 class="setting">Settings</h1>
+        </div>
+        <a href="../home/home.html"><button>Home</button></a>
+
+    </nav>
+</header>
+
+<body>
+    <main>
+
+        <div>
+            <button id="general">Générale</button>
+            <button>task</button>
+            <button>confidentialité</button>
+            <button id="interface">Interface</button>
+        </div>
+
+        <section>
+            <article>
+                <h2>Mode clair/sombre</h2>
+                <h2>Langue</h2>
+                <h2>Notification</h2>
+                <h2>Taille du texte</h2>
+            </article>
+
+            <article class="button">
+
+                <select name="theme" id="theme-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="sombre">sombre</option>
+                    <option value="clair">clair</option>
+                </select>
+
+                <select name="language" id="language-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="français">français</option>
+                    <option value="anglais  ">anglais</option>
+                </select>
+
+
+                <select name="notification" id="notification-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="on">on</option>
+                    <option value="off">off</option>
+                </select>
+
+                <select name="size" id="size-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="s">S</option>
+                    <option value="s">L</option>
+                </select>
+            </article>
+        </section>
+
+
+    </main>
+
+
+</body>
+
+<footer>
+
+    <button>sauvegarder</button>
+
+</footer>
+
+</html>

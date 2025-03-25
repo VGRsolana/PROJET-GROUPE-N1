@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: beige;
+    font-family: 'Indie Flower', cursive;
+}
+
+:root {}
+
+header {
+    margin-top: 30px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header nav a img {
+    width: 200%;
+    margin-left: 10px;
+}
+
+header nav a button {
+    margin-right: 10px;
+    background-color: rgb(233, 196, 111);
+    border-radius: 60px;
+    cursor: pointer;
+
+}
+
+header nav div {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+
+
+header nav button {
+    border-radius: 60px;
+    padding: 5px 20px 5px 20px;
+    font-size: xx-large;
+    cursor: pointer;
+
+}
+
+main {
+    display: flex;
+    justify-content: left;
+    gap: 200px;
+    margin-top: 80px;
+    width: 60%;
+}
+
+main div {
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    width: 15%;
+    border-radius: 60px;
+    border-style: solid;
+}
+
+main div button {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 40px;
+    cursor: pointer;
+    background-color: rgb(233, 196, 111);
+
+}
+
+#general {
+    margin-top: 50px;
+}
+
+#interface {
+    margin-bottom: 50px;
+}
+
+main section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 200px;
+    width: 40%;
+}
+
+main article {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.button {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 2px solid #000000;
+    border-radius: 60px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    background-color: rgb(233, 196, 111);
+}
+
+footer {
+    display: flex;
+    justify-content: right;
+}
+
+footer button {
+    font-size: 1.2em;
+    border-radius: 15px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(233, 196, 111);
+}

@@ -1,0 +1,37 @@
+header {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+header nav {
+    align-items: center;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 50px;
+}
+
+
+header nav a img {
+    display: none;
+}
+
+main {
+    display: inline;
+    gap: 50px;
+}
+
+main div {
+    margin-left: 10px;
+    width: 80%;
+    margin-left: 35px;
+
+}
+
+main div button {
+    margin-top: 20px;
+}
+
+main section article {
+    gap: 50px;
+}

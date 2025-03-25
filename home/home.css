@@ -1,0 +1,223 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Kaushan Script', cursive;
+    background-color: #FCF5DA;
+        
+}
+
+
+.page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+h1 {
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+
+.task-input {
+    display: flex;
+    align-items: center;
+    background: #E6C87B;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    width: 60%;
+}
+
+.task-input input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    padding: 10px;
+    outline: none;
+}
+
+.task-input button {
+    background: white;
+    border: 2px solid black;
+    padding: 8px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.task-input button:hover {
+    transform: scale(1.05);
+}
+
+
+.next-section {
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    transition: 0.3s;
+}
+
+.next-section:hover {
+    transform: scale(1.1);
+}
+
+
+#page2 {
+    padding: 40px 0;
+}
+
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.task-card {
+    background: #F2C87B;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease-in-out;
+}
+
+.task-card:hover {
+    transform: scale(1.1);
+}
+
+.task-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.task-card p {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.task-btn,
+.open-btn {
+    background: white;
+    border: 2px solid black;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 5px;
+}
+
+.task-btn:hover,
+.open-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .task-input {
+        width: 90%;
+    }
+
+    .gridContainer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        width: 100%;
+    }
+
+    .task-card {
+        padding: 15px;
+    }
+
+    .task-btn,
+    .open-btn {
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* Responsive - Format téléphone */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .task-input {
+        width: 90%;
+    }
+
+    .gridContainer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        width: 100%;
+        justify-items: center;
+        margin-top: 600px;
+    }
+
+    .task-card {
+        width: 80%;
+        max-width: 300px;
+        padding: 15px;
+    }
+
+    .task-btn,
+    .open-btn {
+        width: 90%;
+    }
+}
+
+
+
+div img {
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 29px;
+}
