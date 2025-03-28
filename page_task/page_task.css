@@ -209,3 +209,9 @@ main section div div button {
     margin-right: 30px;
 
 }
+
+/* // ajout css du boutton pour revenir à la couleur initial */
+
+#basique {
+    background-color: wheat;
+}

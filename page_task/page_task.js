@@ -29,7 +29,7 @@ deleteTask.addEventListener("click", () => {
 //selectionner les éléments 
 const colorRed = document.getElementById('priority');
 const colorGreen = document.getElementById('daily');
-
+const colorBeige = document.getElementById('basique');
 //ajouter un événement
 
 colorRed.addEventListener("click", function () {
@@ -59,6 +59,22 @@ colorGreen.addEventListener("click", function () {
     }
 });
 
+// AJOUT D'UNE COULEUR INITIAL SUR UNE NOUVELLE TACHE
+
+colorBeige.addEventListener('click', function () {
+
+    const taskBeige = document.querySelectorAll(".tasks input:checked");
+    for (const input of taskBeige) {
+        const taskDiv = input.parentElement;
+        taskDiv.style.backgroundColor = "wheat";
+        // Modifier aussi la couleur des inputs de texte
+        const textInputs = taskDiv.querySelectorAll('input[type="text"]');
+        textInputs.forEach(input => input.style.backgroundColor = "wheat");
+
+
+    }
+
+});
 
 // CREATION DU POPUP LORSQU'ON APPUIE SUR LE BOUTTON OPEN A TASK
 //https://www.youtube.com/watch?v=9Qzm66JX-RA

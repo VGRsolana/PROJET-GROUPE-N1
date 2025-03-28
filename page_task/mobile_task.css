@@ -93,6 +93,10 @@ main div button {
     margin-left: 25px;
 }
 
+#basique {
+    margin-left: 25px;
+}
+
 /* 📌 TASKS */
 .task {
     display: flex;
