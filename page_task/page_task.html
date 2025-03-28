@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./page_task.css">
-    <link rel="stylesheet" href="./mobile_task.css" media="screen and (max-width: 670px)">
+    <link rel="stylesheet" href="page_task.css">
+    <link rel="stylesheet" href="mobile_task.css" media="screen and (max-width: 670px)">
 </head>
 
 <body>
     <header>
         <nav>
             <div>
-                <a href="../sitting/sitting.html"><img src="../img/bx-cog.svg" alt="Setting"></a>
+                <a href=../setting/setting.html><img src="../img/setting.webp" alt="Setting"></a>
                 <a href="../home/home.html"><button>Home</button></a>
             </div>
             <h1>Morning routine</h1>
@@ -30,79 +30,27 @@
             <div class="task">
                 <input type="checkbox">
                 <input type="text" placeholder="Choose a task name">
-                <input type="text" placeholder="Open a task">
+                <!-- TENTATIVE DE POPUP -->
+
+                <button onclick="openPopup()">Open the task</button>
             </div>
 
-            <div class="task">
-                <input type="checkbox">
-                <input type="text" placeholder="Choose a task name">
-                <input type="text" placeholder="Open a task">
-            </div>
 
-            <div class="task">
-                <input type="checkbox">
-                <input type="text" placeholder="Choose a task name">
-                <input type="text" placeholder="Open a task">
-            </div>
+            <!-- TENTATIVE DE POPUP -->
 
-            <div class="task">
-                <input type="checkbox">
-                <input type="text" placeholder="Choose a task name">
-                <input type="text" placeholder="Open a task">
-            </div>
+            <div id="popup-overlay">
+                <div class="popup-content">
+                    <h2>Task name</h2>
+                    <textarea placeholder="Enter your notes here..."></textarea>
+                    <button href="#">Create a rappel</button>
+                    <button href="javascript:void(0)" onclick="closePopup()" class=" popup-exit">Fermer</button>
 
-            <div class="task">
-                <input type="checkbox">
-                <input type="text" placeholder="Choose a task name">
-                <input type="text" placeholder="Open a task">
-            </div>
+                </div>
 
-            <div class="task">
-                <input type="checkbox">
-                <input type="text" placeholder="Choose a task name">
-                <input type="text" placeholder="Open a task">
             </div>
-
-            <div class="task">
-                <input type="checkbox">
-                <input type="text" placeholder="Choose a task name">
-                <input type="text" placeholder="Open a task">
-            </div>
-
-            <div class="task">
-                <input type="checkbox">
-                <input type="text" placeholder="Choose a task name">
-                <input type="text" placeholder="Open a task">
-            </div>
-
-            <div class="task">
-                <input type="checkbox">
-                <input type="text" placeholder="Choose a task name">
-                <input type="text" placeholder="Open a task">
-            </div>
-
-            <div class="task">
-                <input type="checkbox">
-                <input type="text" placeholder="Choose a task name">
-                <input type="text" placeholder="Open a task">
-            </div>
-
-            <div class="task">
-                <input type="checkbox">
-                <input type="text" placeholder="Choose a task name">
-                <input type="text" placeholder="Open a task">
-            </div>
-
-            <div class="task">
-                <input type="checkbox">
-                <input type="text" placeholder="Choose a task name">
-                <input type="text" placeholder="Open a task">
-            </div>
-
         </section>
-
     </main>
-<script src="./page_task.js"></script>
 </body>
+<script src="page_task.js"></script>
 
 </html>

@@ -1,79 +1,92 @@
 * {
-    padding: 0;
     margin: 0;
-    background-color: beige;
+    padding: 0;
     font-family: 'Indie Flower', cursive;
+
 }
 
-:root {}
+body {
+    font-family: 'Kaushan Script', cursive;
+    background-color: #FCF5DA;
 
-header {
-    margin-top: 30px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+h1 {
+    font-size: 30px;
+    flex-grow: 1;
+    text-align: center;
+    margin-right: 8%;
 }
 
 header nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-
-header nav a img {
-    width: 200%;
-    margin-left: 10px;
-}
-
-header nav a button {
-    margin-right: 10px;
-    background-color: rgb(233, 196, 111);
-    border-radius: 60px;
-    cursor: pointer;
-
+    justify-content: space-evenly;
+    gap: 20px;
 }
 
 header nav div {
     display: flex;
-    justify-content: center;
-    font-size: 2em;
+    align-items: center;
+    position: relative;
+    left: 80px;
+    padding: 50px;
 }
 
+nav img {
+    width: auto;
+    height: 40px;
+}
 
-header nav button {
-    border-radius: 60px;
-    padding: 5px 20px 5px 20px;
-    font-size: xx-large;
-    cursor: pointer;
-
+nav a button {
+    width: 100%;
+    border-radius: 30px;
+    height: 50%;
+    background-color: rgb(233, 196, 111);
+    margin: 10px 25px 10px 25px;
+    font-size: 1em;
+    padding: 5px;
+    align-items: center;
 }
 
 main {
+    width: 100%;
     display: flex;
-    justify-content: left;
-    gap: 200px;
-    margin-top: 80px;
-    width: 60%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    min-width: 80vh;
 }
 
-main div {
+
+.aside {
     background-color: wheat;
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    width: 15%;
-    border-radius: 60px;
+    height: 70vh;
+    width: 12%;
+    border-radius: 70px;
     border-style: solid;
+    gap: 10px;
 }
 
 main div button {
+    background-color: rgb(233, 196, 111);
+    width: 70%;
     display: flex;
     flex-direction: column;
     font-size: 1em;
     border-radius: 15px;
     padding: 5px;
+    margin-left: 30px;
     margin-top: 40px;
     cursor: pointer;
-    background-color: rgb(233, 196, 111);
-
 }
 
 #general {
@@ -129,4 +142,5 @@ footer button {
     padding: 5px;
     cursor: pointer;
     background-color: rgb(233, 196, 111);
+    margin: ;
 }

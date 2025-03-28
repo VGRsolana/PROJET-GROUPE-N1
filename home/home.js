@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     addForm.addEventListener("submit", function (event) {
         event.preventDefault()
         let taskTitle = taskInput.value.trim();
-    
+
 
         if (taskTitle !== "") {
             // Créer un nouveau bloc
@@ -21,14 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
             let noteElement = document.createElement("p");
             noteElement.innerHTML = "<b>Note :</b> ";
 
-             // Ajouter le bouton "Create Task"
+            // Ajouter le bouton "Create Task"
             let createTaskButton = document.createElement("button");
             createTaskButton.classList.add("task-btn");
             createTaskButton.textContent = "delete task";
 
             // Supprimer la tâche au clic sur "Create Task"
             createTaskButton.addEventListener("click", function () {
-            newTaskBlock.remove();
+                newTaskBlock.remove();
             });
 
             // Ajouter le bouton "Open"
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Rediriger vers une autre page au clic
             openButton.addEventListener("click", function () {
-            window.location.href = "../page_task/page_task.html"; 
+                window.location.href = "../page_task/page_task.html";
             });
 
 
